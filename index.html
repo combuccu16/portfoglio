@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-
-<html class="dark" lang="en" style=""><head>
+<html class="dark" lang="en" style="">
+<head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Akram Bouslama Portfolio</title>
@@ -143,14 +143,21 @@
 <body class="font-body-md selection:bg-primary-container selection:text-on-primary-container">
 <!-- Navigation -->
 <header class="fixed top-0 w-full z-50 backdrop-blur-xl border-b border-outline-variant/10 shadow-sm bg-surface-container/50 dark:bg-surface-container/50">
-<nav class="flex items-center h-16 px-gutter max-w-container-max mx-auto justify-end">
+<nav class="flex items-center h-16 px-gutter max-w-container-max mx-auto justify-between md:justify-end gap-8">
 <div class="hidden md:flex gap-8 items-center">
-<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface transition-colors" href="#about">About</a>
-<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface transition-colors" href="#competitive">Competitive</a>
-<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface transition-colors" href="#skills">Skills</a>
-<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface transition-colors" href="#projects">Projects</a>
-<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface transition-colors" href="#timeline">Timeline</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface transition-colors" href="#about" data-en="About" data-fr="À propos">About</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface transition-colors" href="#competitive" data-en="Competitive" data-fr="Compétitif">Competitive</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface transition-colors" href="#skills" data-en="Skills" data-fr="Compétences">Skills</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface transition-colors" href="#projects" data-en="Projects" data-fr="Projets">Projects</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface transition-colors" href="#timeline" data-en="Timeline" data-fr="Parcours">Timeline</a>
 </div>
+
+<!-- Language Switcher Button -->
+<button id="lang-toggle" class="flex items-center gap-1 px-3 py-1.5 rounded-lg border border-outline-variant/30 text-primary hover:bg-primary/10 transition-all font-label-md text-label-md">
+  <span class="material-symbols-outlined text-base">translate</span>
+  <span id="lang-text">FR</span>
+</button>
+
 <button class="md:hidden text-on-surface">
 <span class="material-symbols-outlined">menu</span>
 </button>
@@ -169,20 +176,20 @@
 <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
 <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
 </span>
-                        Available for Opportunities
+<span data-en="Available for Opportunities" data-fr="Disponible pour des opportunités">Available for Opportunities</span>
                     </div>
 <h1 class="font-display-lg text-display-lg md:text-display-lg text-on-surface">
-                        Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Akram Bouslama</span>
+                        <span data-en="Hi, I'm" data-fr="Salut, je suis">Hi, I'm</span> <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Akram Bouslama</span>
 </h1>
-<p class="font-headline-sm text-headline-sm text-on-surface-variant max-w-2xl">
+<p class="font-headline-sm text-headline-sm text-on-surface-variant max-w-2xl" data-en="Network Engineering student at Insat and Competitive Programmer focused on designing efficient, high-performance systems with a strong foundation in algorithms and data structures" data-fr="Étudiant en ingénierie des réseaux à l'INSAT et programmeur compétitif, concentré sur la conception de systèmes efficaces et performants avec de solides bases en algorithmes et structures de données">
                         Network Engineering student at Insat and Competitive Programmer focused on designing efficient, high-performance systems with a strong foundation in algorithms and data structures 
                     </p>
-<p class="font-body-lg text-body-lg text-outline max-w-xl">
+<p class="font-body-lg text-body-lg text-outline max-w-xl" data-en="Specializing in algorithmic optimization, backend scalability, and elegant problem solving." data-fr="Spécialisé dans l'optimisation algorithmique, la scalabilité backend et la résolution élégante de problèmes.">
                         Specializing in algorithmic optimization, backend scalability, and elegant problem solving.
                     </p>
 <div class="flex flex-wrap gap-4 pt-4">
 <a class="px-8 py-4 rounded-xl btn-primary font-label-md text-label-md flex items-center gap-2" href="#projects">
-                            View Projects <span class="material-symbols-outlined">arrow_forward</span>
+                            <span data-en="View Projects" data-fr="Voir les projets">View Projects</span> <span class="material-symbols-outlined">arrow_forward</span>
 </a>    
 </div>
 </div>
@@ -191,7 +198,7 @@
 <!-- Section: Competitive Programming -->
 <section class="py-section-gap px-gutter max-w-container-max mx-auto transition-all duration-1000 opacity-100 translate-y-0" id="competitive">
 <div class="flex flex-col items-center mb-stack-lg text-center">
-<h2 class="font-headline-lg text-headline-lg text-on-surface mb-2">Competitive Programming</h2>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-2" data-en="Competitive Programming" data-fr="Programmation Compétitive">Competitive Programming</h2>
 <div class="h-1.5 w-24 bg-gradient-to-r from-primary to-secondary rounded-full"></div>
 </div>
 <div class="grid md:grid-cols-3 gap-8 mb-16 md:grid-cols-2">
@@ -204,7 +211,7 @@
 <span class="font-label-md text-label-md text-primary"></span>
 </div>
 <h3 class="font-headline-sm text-headline-sm text-on-surface">Codeforces</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">Pupil Rank. Solved over 400 problems involving advanced data structures .</p>
+<p class="font-body-md text-body-md text-on-surface-variant" data-en="Pupil Rank. Solved over 400 problems involving advanced data structures." data-fr="Rang: Pupil. Plus de 400 problèmes résolus impliquant des structures de données avancées.">Pupil Rank. Solved over 400 problems involving advanced data structures .</p>
 <div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
 <div class="h-full bg-primary w-[85%] group-hover:w-[90%] transition-all duration-700"></div>
 </div>
@@ -218,7 +225,7 @@
 <span class="font-label-md text-label-md text-tertiary"></span>
 </div>
 <h3 class="font-headline-sm text-headline-sm text-on-surface">LeetCode</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">400+ LeetCode problems solved, focused on algorithmic problem solving and efficient code design.</p>
+<p class="font-body-md text-body-md text-on-surface-variant" data-en="400+ LeetCode problems solved, focused on algorithmic problem solving and efficient code design." data-fr="Plus de 400 problèmes LeetCode résolus, axés sur la résolution de problèmes algorithmiques et la conception de code efficace.">400+ LeetCode problems solved, focused on algorithmic problem solving and efficient code design.</p>
 <div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
 <div class="h-full bg-tertiary w-[95%] group-hover:w-[100%] transition-all duration-700"></div>
 </div>
@@ -226,7 +233,7 @@
 <!-- Google Kickstart -->
 </div>
 <div class="glass-card p-gutter rounded-xl">
-  <h3 class="font-headline-sm text-headline-sm text-on-surface mb-stack-md">
+  <h3 class="font-headline-sm text-headline-sm text-on-surface mb-stack-md" data-en="Achievement Gallery" data-fr="Galerie des Réussites">
     Achievement Gallery
   </h3>
 
@@ -240,7 +247,7 @@
         src="images/first.png"
       />
       <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
-        <span class="font-label-md text-label-md text-white">
+        <span class="font-label-md text-label-md text-white" data-en="first place isi contest" data-fr="première place au concours ISI">
           first place isi contest
         </span>
       </div>
@@ -254,7 +261,7 @@
         src="images/second.png"
       />
       <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
-        <span class="font-label-md text-label-md text-white">
+        <span class="font-label-md text-label-md text-white" data-en="second place CodeQuest 3.0" data-fr="deuxième place CodeQuest 3.0">
           second place CodeQuest 3.0
         </span>
       </div>
@@ -265,9 +272,9 @@
 </section>
 <!-- Section: Skills -->
 <!-- Section: Projects -->
-<section class="py-section-gap px-gutter max-w-container-max mx-auto transition-all duration-1000 opacity-100 translate-y-0" id="skills"><div class="flex flex-col items-center mb-stack-lg text-center"><h2 class="font-headline-lg text-headline-lg text-on-surface mb-2">Technical Arsenal</h2><div class="h-1.5 w-24 bg-gradient-to-r from-primary to-secondary rounded-full"></div></div><div class="grid md:grid-cols-3 gap-8"><div class="glass-card p-stack-md rounded-xl space-y-4"><div class="flex items-center gap-3 text-primary"><span class="material-symbols-outlined">code</span><h3 class="font-headline-sm text-headline-sm text-on-surface">Languages</h3></div><div class="flex flex-wrap gap-2"><span class="px-3 py-1 rounded-full bg-primary/10 text-primary font-label-md text-label-md">C++</span><span class="px-3 py-1 rounded-full bg-primary/10 text-primary font-label-md text-label-md">Python</span><span class="px-3 py-1 rounded-full bg-primary/10 text-primary font-label-md text-label-md">Java</span><span class="px-3 py-1 rounded-full bg-primary/10 text-primary font-label-md text-label-md">JavaScript</span></div></div><div class="glass-card p-stack-md rounded-xl space-y-4"><div class="flex items-center gap-3 text-secondary"><span class="material-symbols-outlined">layers</span><h3 class="font-headline-sm text-headline-sm text-on-surface">Frameworks & Libraries</h3></div><div class="flex flex-wrap gap-2"><span class="px-3 py-1 rounded-full bg-secondary/10 text-secondary font-label-md text-label-md">React</span><span class="px-3 py-1 rounded-full bg-secondary/10 text-secondary font-label-md text-label-md">Flutter</span><span class="px-3 py-1 rounded-full bg-secondary/10 text-secondary font-label-md text-label-md">Node.js</span><span class="px-3 py-1 rounded-full bg-secondary/10 text-secondary font-label-md text-label-md">Express</span><span class="px-3 py-1 rounded-full bg-secondary/10 text-secondary font-label-md text-label-md">Django</span></div></div><div class="glass-card p-stack-md rounded-xl space-y-4"><div class="flex items-center gap-3 text-tertiary"><span class="material-symbols-outlined">construction</span><h3 class="font-headline-sm text-headline-sm text-on-surface">Tools</h3></div><div class="flex flex-wrap gap-2"><span class="px-3 py-1 rounded-full bg-tertiary/10 text-tertiary font-label-md text-label-md">Git</span><span class="px-3 py-1 rounded-full bg-tertiary/10 text-tertiary font-label-md text-label-md">Docker</span></div></div></div></section><section class="py-section-gap px-gutter max-w-container-max mx-auto transition-all duration-1000 opacity-100 translate-y-0" id="projects">
+<section class="py-section-gap px-gutter max-w-container-max mx-auto transition-all duration-1000 opacity-100 translate-y-0" id="skills"><div class="flex flex-col items-center mb-stack-lg text-center"><h2 class="font-headline-lg text-headline-lg text-on-surface mb-2" data-en="Technical Arsenal" data-fr="Arsenal Technique">Technical Arsenal</h2><div class="h-1.5 w-24 bg-gradient-to-r from-primary to-secondary rounded-full"></div></div><div class="grid md:grid-cols-3 gap-8"><div class="glass-card p-stack-md rounded-xl space-y-4"><div class="flex items-center gap-3 text-primary"><span class="material-symbols-outlined">code</span><h3 class="font-headline-sm text-headline-sm text-on-surface" data-en="Languages" data-fr="Langages">Languages</h3></div><div class="flex flex-wrap gap-2"><span class="px-3 py-1 rounded-full bg-primary/10 text-primary font-label-md text-label-md">C++</span><span class="px-3 py-1 rounded-full bg-primary/10 text-primary font-label-md text-label-md">Python</span><span class="px-3 py-1 rounded-full bg-primary/10 text-primary font-label-md text-label-md">Java</span><span class="px-3 py-1 rounded-full bg-primary/10 text-primary font-label-md text-label-md">JavaScript</span></div></div><div class="glass-card p-stack-md rounded-xl space-y-4"><div class="flex items-center gap-3 text-secondary"><span class="material-symbols-outlined">layers</span><h3 class="font-headline-sm text-headline-sm text-on-surface" data-en="Frameworks & Libraries" data-fr="Frameworks & Bibliothèques">Frameworks & Libraries</h3></div><div class="flex flex-wrap gap-2"><span class="px-3 py-1 rounded-full bg-secondary/10 text-secondary font-label-md text-label-md">React</span><span class="px-3 py-1 rounded-full bg-secondary/10 text-secondary font-label-md text-label-md">Flutter</span><span class="px-3 py-1 rounded-full bg-secondary/10 text-secondary font-label-md text-label-md">Node.js</span><span class="px-3 py-1 rounded-full bg-secondary/10 text-secondary font-label-md text-label-md">Express</span><span class="px-3 py-1 rounded-full bg-secondary/10 text-secondary font-label-md text-label-md">Django</span></div></div><div class="glass-card p-stack-md rounded-xl space-y-4"><div class="flex items-center gap-3 text-tertiary"><span class="material-symbols-outlined">construction</span><h3 class="font-headline-sm text-headline-sm text-on-surface" data-en="Tools" data-fr="Outils">Tools</h3></div><div class="flex flex-wrap gap-2"><span class="px-3 py-1 rounded-full bg-tertiary/10 text-tertiary font-label-md text-label-md">Git</span><span class="px-3 py-1 rounded-full bg-tertiary/10 text-tertiary font-label-md text-label-md">Docker</span></div></div></div></section><section class="py-section-gap px-gutter max-w-container-max mx-auto transition-all duration-1000 opacity-100 translate-y-0" id="projects">
 <div class="flex flex-col items-center mb-stack-lg text-center">
-<h2 class="font-headline-lg text-headline-lg text-on-surface mb-2">Featured Projects</h2>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-2" data-en="Featured Projects" data-fr="Projets Phares">Featured Projects</h2>
 <div class="h-1.5 w-24 bg-gradient-to-r from-primary to-secondary rounded-full"></div>
 </div>
 <div class="grid md:grid-cols-2 gap-8">
@@ -283,7 +290,7 @@
 <div class="flex gap-2">
 </div>
 </div>
-<p class="font-body-md text-body-md text-on-surface-variant">An interactive  platform that connects regular usres to doctors</p>
+<p class="font-body-md text-body-md text-on-surface-variant" data-en="An interactive platform that connects regular users to doctors" data-fr="Une plateforme interactive qui connecte les utilisateurs ordinaires aux médecins">An interactive platform that connects regular usres to doctors</p>
 <div class="flex gap-4 pt-2">
 <a class="flex items-center gap-2 font-label-md text-label-md text-outline hover:text-on-surface transition-colors" href="https://github.com/combuccu16/healix">
                                 GitHub <span class="material-symbols-outlined text-sm">link</span>
@@ -303,7 +310,7 @@
 
 </div>
 </div>
-<p class="font-body-md text-body-md text-on-surface-variant">A multiplayer chkoba game where you can host tournaments and play with your friends</p>
+<p class="font-body-md text-body-md text-on-surface-variant" data-en="A multiplayer chkoba game where you can host tournaments and play with your friends" data-fr="Un jeu de chkoba multijoueur où vous pouvez organiser des tournois et jouer avec vos amis">A multiplayer chkoba game where you can host tournaments and play with your friends</p>
 <div class="flex gap-4 pt-2">
 <a class="flex items-center gap-2 font-label-md text-label-md text-outline hover:text-on-surface transition-colors" href="https://github.com/combuccu16/chkoba">
                                 GitHub <span class="material-symbols-outlined text-sm">link</span>
@@ -317,7 +324,7 @@
 <!-- Section: Timeline -->
 <section class="py-section-gap px-gutter max-w-container-max mx-auto overflow-hidden transition-all duration-1000 opacity-100 translate-y-0" id="timeline">
 <div class="flex flex-col items-center mb-stack-lg text-center">
-<h2 class="font-headline-lg text-headline-lg text-on-surface mb-2">My Journey</h2>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-2" data-en="My Journey" data-fr="Mon Parcours">My Journey</h2>
 <div class="h-1.5 w-24 bg-gradient-to-r from-primary to-secondary rounded-full"></div>
 </div>
 <div class="relative max-w-4xl mx-auto">
@@ -327,9 +334,9 @@
 <div class="relative flex flex-col md:flex-row items-center gap-8 md:gap-0">
 <div class="md:w-1/2 md:pr-12 md:text-right">
 <div class="glass-card p-6 rounded-2xl inline-block w-full">
-<span class="text-primary font-bold font-label-md text-label-md mb-2 block">2026 - Present</span>
-<h4 class="font-headline-sm text-headline-sm text-on-surface mb-2">Network Engineering student</h4>
-<p class="font-body-md text-body-md text-on-surface-variant">Focused on algorithms, backend fundamentals, performance-oriented coding, and learning system design.</p>
+<span class="text-primary font-bold font-label-md text-label-md mb-2 block" data-en="2026 - Present" data-fr="2026 - Présent">2026 - Present</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-2" data-en="Network Engineering student" data-fr="Étudiant en Ingénierie des Réseaux">Network Engineering student</h4>
+<p class="font-body-md text-body-md text-on-surface-variant" data-en="Focused on algorithms, backend fundamentals, performance-oriented coding, and learning system design." data-fr="Concentré sur les algorithmes, les bases du backend, le codage axé sur la performance et l'apprentissage de l'architecture système.">Focused on algorithms, backend fundamentals, performance-oriented coding, and learning system design.</p>
 </div>
 </div>
 <div class="absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-background z-10 hidden md:block"></div>
@@ -342,8 +349,8 @@
 <div class="md:w-1/2 md:pl-12">
 <div class="glass-card p-6 rounded-2xl inline-block w-full">
 <span class="text-secondary font-bold font-label-md text-label-md mb-2 block">2024</span>
-<h4 class="font-headline-sm text-headline-sm text-on-surface mb-2">Began my competetive programming Journey</h4>
-<p class="font-body-md text-body-md text-on-surface-variant">Participated in multiple programming contests and achieved several top rankings.</p>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-2" data-en="Began my competitive programming journey" data-fr="Début de mon parcours en programmation compétitive">Began my competetive programming Journey</h4>
+<p class="font-body-md text-body-md text-on-surface-variant" data-en="Participated in multiple programming contests and achieved several top rankings." data-fr="Participation à plusieurs concours de programmation et obtention de plusieurs classements de premier ordre.">Participated in multiple programming contests and achieved several top rankings.</p>
 </div>
 </div>
 </div>
@@ -366,6 +373,22 @@
 </div>
 </footer>
 <script>
+        // Language Selector logic
+        const langToggleBtn = document.getElementById('lang-toggle');
+        const langText = document.getElementById('lang-text');
+        let currentLang = 'en';
+
+        langToggleBtn.addEventListener('click', () => {
+            currentLang = currentLang === 'en' ? 'fr' : 'en';
+            document.documentElement.lang = currentLang;
+            langText.textContent = currentLang === 'en' ? 'FR' : 'EN';
+            
+            // Translate all elements with data attributes
+            document.querySelectorAll('[data-en]').forEach(element => {
+                element.textContent = element.getAttribute(`data-${currentLang}`);
+            });
+        });
+
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -395,4 +418,5 @@
             observer.observe(section);
         });
     </script>
-</body></html>
+</body>
+</html>
